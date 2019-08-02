@@ -116,6 +116,8 @@ typedef NS_ENUM(NSUInteger, ResponseFormat) {
     if (backgroundTask) {
         defaultConfigObject = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:taskId];
     }
+                
+    defaultConfigObject.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData; // force control cache
     
     // request timeout, -1 if not set in options
     float timeout = [options valueForKey:@"timeout"] == nil ? -1 : [[options valueForKey:@"timeout"] floatValue];
