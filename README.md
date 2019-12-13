@@ -53,7 +53,7 @@ In `0.8.0` we introduced experimental Web API polyfills that make it possible to
 Install package from npm
 
 ```sh
-npm install github:codevoler/rn-fetch-blob --save
+npm install github:codebetterme/rn-fetch-blob --save
 ```
 
 Or if using CocoaPods, add the pod to your `Podfile`
